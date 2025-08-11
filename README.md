@@ -1,14 +1,38 @@
 **CoreXY ESP32 Pen Plotter**
-This project is a fully functional CoreXY-based pen plotter designed for precision and reliability, combining mechanical engineering, electronics, and embedded programming into a single cohesive system.
+This project is a fully functional CoreXY-based pen plotter designed for precision, speed, and ease of use. It brings together mechanical engineering, electronics, control systems, and intuitive software to deliver a reliable plotting experience.
 
-The motion system is driven by GT2 timing belts and precision drivers, ensuring smooth and accurate X/Y movement. The CoreXY configuration provides efficient motion control with reduced inertia, allowing for higher speed and better precision compared to traditional Cartesian setups. The entire motion control is powered by an ESP32 microcontroller, enabling both high-speed processing and integrated connectivity options.
+Mechanical & Hardware Features
+CoreXY motion system for high-speed, precise X/Y movement with reduced inertia.
 
-A key highlight of this system is its PID-based closed-loop control. Using feedback from optical encoders, the plotter continuously monitors its position and corrects any deviation in real-time. This ensures that plotted paths are highly accurate and consistent, even during complex or long-duration drawing tasks.
+GT2 timing belts and precision drivers for smooth, consistent motion.
 
-For the Z-axis, a servo motor is used to actuate the pen holder, allowing precise up and down movement for clean and controlled plotting. This makes it possible to handle intricate patterns and line transitions smoothly.
+Custom 3D-printed components for the frame, carriage, belt tensioners, and pen holder.
 
-The plotter also integrates limit switches for homing operations, providing a predefined and repeatable reference position at startup. In addition, an emergency stop button is included, allowing the user to instantly halt all motion and safely return the plotter to the home position. This feature is especially important for preventing damage to the machine or workpiece in case of unexpected issues.
+Servo-driven Z-axis for controlled pen up/down motion.
 
-Mechanical components such as the frame, carriage, belt tensioners, and pen holder are custom 3D-printed for a lightweight yet rigid structure. This allows for easy customization and replacement of parts, making the system both versatile and user-friendly.
+Limit switches for repeatable homing and reference positioning.
 
-Overall, this project demonstrates a seamless integration of mechanical design, precise motion control, and robust safety features. It serves as both a learning platform for motion control systems and a functional tool for producing high-quality plotted artwork or technical drawings.
+Emergency stop to instantly halt motion and return safely to the home position.
+
+Electronics & Control
+Powered by an ESP32 microcontroller for fast processing and wireless capability.
+
+PID-based closed-loop control with real-time feedback from optical encoders.
+
+Encoder feedback ensures accurate path following, even during complex or long plots.
+
+Software & User Interface
+Custom firmware built from the ground up for CoreXY kinematics and closed-loop PID control.
+
+User-friendly UI for easy operation — allowing you to control movements, start/stop plotting, trigger homing, and manage the emergency stop with minimal learning curve.
+
+UI designed for accessibility, making it easy for beginners and efficient for advanced users.
+
+Safety & Reliability
+Integrated emergency stop ensures quick reaction to errors or obstructions.
+
+Homing process guarantees consistent starting points for all drawings.
+
+Sturdy yet lightweight structure ensures durability without sacrificing portability.
+
+This pen plotter is not just a demonstration of precise motion control — it’s a complete system that merges mechanical design, control theory, and user-centric software into a versatile plotting tool. Whether for art, technical drawings, or experimental automation, it delivers consistent and repeatable results while keeping operation intuitive and safe.plotted artwork or technical drawings.
